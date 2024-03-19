@@ -108,12 +108,15 @@
     });
 
     // bonus fade animition
+
     let slideIndex = 0;
     showSlides();
 
     function showSlides() {
     let i;
     const slides = document.getElementsByClassName("mySlides");
+       
+   
 
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
@@ -127,6 +130,33 @@
     setTimeout(showSlides, 3000); // Change image every 3 seconds
     }
 
+
+    // let slideIndex1 = 0;
+    // showSlides("slideshow-container1");
+
+    // let slideIndex2 = 0;
+    // showSlides("slideshow-container2");
+
+    // function showSlides(containerClass) {
+    //     let i;
+    //     const slides = document.querySelectorAll(`.${containerClass} .mySlides`);
+
+    //     for (i = 0; i < slides.length; i++) {
+    //         slides[i].style.display = "none";
+    //     }
+
+    //     if (containerClass === "slideshow-container1") {
+    //         slideIndex1++;
+    //         if (slideIndex1 > slides.length) { slideIndex1 = 1; }
+    //         slides[slideIndex1 - 1].style.display = "block";
+    //         setTimeout(() => showSlides(containerClass), 3000);
+    //     } else if (containerClass === "slideshow-container2") {
+    //         slideIndex2++;
+    //         if (slideIndex2 > slides.length) { slideIndex2 = 1; }
+    //         slides[slideIndex2 - 1].style.display = "block";
+    //         setTimeout(() => showSlides(containerClass), 3000);
+    //     }
+    // }
 
 
 })(jQuery);
