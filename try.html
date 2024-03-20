@@ -34,23 +34,27 @@
 
         <!-- {{-- text stylesheet --}} -->
         <link href="css/text.css" rel="stylesheet" >
+
+        <!-- <link href="path/to/bootstrap.min.css" rel="stylesheet"> -->
+
+
         <style>
-            body {
+            /* body {
   font-size: 16px;
   line-height: 1.5;
   background: #fff;
   margin: 0;
   padding: 0;
-}
+} */
 
-p {
+/* p {
   margin: 0 0 10px 0;
 }
 
 .clip-svg {
   width: 0;
   height: 0;
-}
+} */
 
 .img-clip-block {
   font-family: 'Cuprum', sans-serif;
@@ -61,7 +65,7 @@ p {
   text-align: center;
 }
 
-.img-clip-row:first-of-type .img-clip-wrap {
+/* .img-clip-row:first-of-type .img-clip-wrap {
   background-position: top;
 }
 
@@ -71,13 +75,13 @@ p {
 
 .img-clip-row:nth-of-type(2) .img-clip-wrap:nth-of-type(even) {
   background-position: right;
-}
+} */
 
-.img-clip-row:last-of-type .img-clip-wrap {
+/* .img-clip-row:last-of-type .img-clip-wrap {
   background-position: bottom;
-}
+} */
 
-.img-clip-wrap {
+/* .img-clip-wrap {
   width: 300px; 
   height: 300px; 
   background-image: url("https://karenmenezes.com/static/img/demos/shapes-polygon/clip-demo.jpg"); 
@@ -89,9 +93,9 @@ p {
   -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   clip-path: url("#clip-diamond-demo");
-}
+} */
 
-.overlay {
+/* .overlay {
   background: rgba(171, 147, 116, 0.8);
   position: absolute;
   left: 0;
@@ -101,9 +105,9 @@ p {
   pointer-events: none;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
-}
+} */
 
-.overlay-content {
+/* .overlay-content {
   color: rgba(255, 255, 255, 0.4);
   font-weight: 400;
   font-size: 180%;
@@ -115,21 +119,21 @@ p {
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
   text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
-}
+} */
 
-.img-clip-wrap:hover .overlay {
+/* .img-clip-wrap:hover .overlay {
   -webkit-transition: all 0.4s ease-in;
   transition: all 0.4s ease-in;
   background: none;
-}
+} */
 
-.img-clip-img {
+/* .img-clip-img {
   display: block;
 }
 .hero-new{
     height: 200px !important;
     width: 200px !important;
-}
+} */
 @media only screen and (min-width: 650px) {
   .img-clip-row {
     margin-top: -154px;
@@ -353,7 +357,7 @@ a.clip-each:hover {
       <div class="row g-5 align-items-center">
           <div class="col-lg-7 col-md-6 col-sm-12">
               <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-4 animated zoomIn">Welcome to Foody Restorant</small>
-              <h1 class="display-1 mb-4 animated zoomIn">Enjoy<span class="text-primary">Our</span>Delicious dishes With</h1>
+              <h1 class="display-1 mb-4 animated zoomIn">Feel<span class="text-primary">The</span>Flavor</h1>
               <div class="animated zoomIn" id="container-text">
                   <div id="flip-text">
                       <div><div>Subscription</div></div>
@@ -364,17 +368,17 @@ a.clip-each:hover {
               </div> <br>
               <a href="booking.html" class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 me-4 animated zoomIn">Order Now</a>
           </div>
-          <div class="col-sm-12 col-lg-5 col-md-6 img-clip-block">
-               <div class="row">
-                  <div class="col-sm-6 col-lg-6 col-md-6">
-                      <!-- <img src="img/menu-01.jpg" class="img-fluid rounded  animated zoomIn img-hero-up-left" alt=""> -->
-                      <div class="slideshow-container animated zoomIn">
+          <div class="col-lg-5 col-md-6 col-sm-6 img-clip-block bg-white">
+               <div class="row img-hero-row">
+                  <div class="col-lg-6 col-md-6 col-sm-3 ">
+                      <img src="img/menu-01.jpg" class="img-fluid rounded  animated zoomIn img-hero-up-left" alt="">
+                      <!-- <div class="slideshow-container animated zoomIn">
                         <div class="mySlides fade">
-                          <img src="img/menu1-1.png" class="img-fluid rounded  img-hero-up-left" style="width:100%">
+                          <img src="img/menu1-1.png" class="img-fluid rounded  img-hero-up-left" >
                         </div>
     
                         <div class="mySlides fade">
-                          <img src="img/menu-hero.png" class="img-fluid rounded  img-hero-up-left" style="width:100%">
+                          <img src="img/menu-hero.png" class="img-fluid rounded  img-hero-up-left" >
                         </div>
     
                         <div class="mySlides fade">
@@ -384,10 +388,10 @@ a.clip-each:hover {
                         <div class="mySlides fade">
                             <img src="img/menu-hero.png" class="img-fluid rounded  img-hero-up-left" style="width:100%">
                         </div>
-                      </div>
+                      </div> -->
                   </div>
                   
-                  <div class="col-sm-6 col-lg-6 col-md-6">
+                  <div class="col-lg-6 col-md-6 col-sm-3">
                    <img src="img/menu-02.jpg" class="img-fluid rounded  animated zoomIn img-hero-up-right" alt="">
                    <!-- <div class="slideshow-container animated zoomIn">
                     <div class="mySlides fade">
@@ -408,16 +412,16 @@ a.clip-each:hover {
                   </div> -->
                   </div>
                </div>
-               <div class="row img-clip-row">
-                <div class="col-lg-12 col-md-12">
+               <div class="row img-clip-row img-hero-row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
                   <img src="img/foody.png" class="img-fluid rounded animated zoomIn img-hero-midel" alt="">
                 </div>
                </div>
-             <div class="row img-clip-row">
-                <div class="col-lg-6 col-md-6">
+             <div class="row img-clip-row img-hero-row">
+                <div class="col-lg-6 col-md-6 col-sm-3">
                       <img src="img/menu-04.jpg" class="img-fluid rounded animated zoomIn img-hero-down-right" alt="">
                 </div>
-                <div class="col-lg-6 col-md-6">
+                <div class="col-lg-6 col-md-6 col-sm-3">
                   <img src="img/menu-05.jpg" class="img-fluid rounded animated zoomIn img-hero-down-left" alt="">
                 </div>
              </div>
