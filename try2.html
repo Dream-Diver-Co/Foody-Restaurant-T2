@@ -552,46 +552,36 @@ a.clip-each:hover {
     <script src="js/main.js "></script>
     <script>
         const slideshowContainers = ["slideshow-container1", "slideshow-container2", "slideshow-container3", "slideshow-container4"];
-//         const slideshowConfigs = [
-//     { containerId: "slideshow-container1", delay: 3000 },
-//     { containerId: "slideshow-container2", delay: 4000 },
-//     { containerId: "slideshow-container3", delay: 5000 },
-//     { containerId: "slideshow-container4", delay: 6000 }
-// ];
+        slideshowContainers.forEach(containerId => {
+            showSlides(containerId);
+        });
 
-slideshowContainers.forEach(containerId => {
-    showSlides(containerId);
-});
+        function showSlides(containerId) {
+            let slideIndex = 0;
+            const slides = document.querySelectorAll(`#${containerId} .mySlides`);
 
-function showSlides(containerId) {
-    let slideIndex = 0;
-    const slides = document.querySelectorAll(`#${containerId} .mySlides`);
+            function displaySlide() {
+                for (let i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slides[slideIndex].style.display = "block";
+            }
 
-    function displaySlide() {
-        for (let i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
+            function nextSlide() {
+                slideIndex++;
+                if (slideIndex >= slides.length) {
+                    slideIndex = 0;
+                }
+                displaySlide();
+            }
+
+            function autoChange() {
+                nextSlide();
+                setTimeout(autoChange, 3000);
+            }
+
+            autoChange();
         }
-        slides[slideIndex].style.display = "block";
-    }
-
-    function nextSlide() {
-        slideIndex++;
-        if (slideIndex >= slides.length) {
-            slideIndex = 0;
-        }
-        displaySlide();
-    }
-
-    function autoChange() {
-        nextSlide();
-        setTimeout(autoChange, 3000);
-    }
-
-    autoChange();
-}
-
-
-
     </script>
 </body>
 

@@ -98,18 +98,29 @@ h4, h5, h6, .h4, .h5, .h6 {
 
 /* hero image start*/
 
-.img-hero-midel{
+.img-clip-block {
+    font-family: 'Cuprum', sans-serif;
+    margin: 20px 0;
+}
+  
+.img-clip-row {
+  text-align: center;
+}
+
+.img-hero-midel {
     width: 470px;
+    max-width: none;
     height: 400px;
     margin: 20px;
     margin-left: auto;
     margin-right: auto;
     /* display: block;
     position: relative; */
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2) !important;
     -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
+
 
 .img-hero-up-right{
     width: 370px;
@@ -158,15 +169,6 @@ h4, h5, h6, .h4, .h5, .h6 {
 }
 @media only screen and (max-width: 600px) {
 
-    /* .row>* {
-        flex-shrink: 0;
-        width: 100% !important;
-        display: flex;
-        max-width: 100%;
-        padding-right: calc(var(--bs-gutter-x) / 2);
-        padding-left: calc(var(--bs-gutter-x) / 2);
-        margin-top: var(--bs-gutter-y);
-    } */
     .row>* {
         flex-shrink: 0;
         width: auto !important;
@@ -176,8 +178,19 @@ h4, h5, h6, .h4, .h5, .h6 {
         margin-top: var(--bs-gutter-y);
     }
 
+    .display-block{
+        display: block;
+    }
+    .img-clip-block {
+        display: ruby;
+    }   
+    /* #flip-text-hero{
+        height: 50px;
+        overflow: hidden;
+        text-align: center;
+    } */
     .img-clip-row {
-        margin-top: -103px;
+        margin-top: -84px;
     }
  
     .img-hero-up-left {
@@ -202,6 +215,7 @@ h4, h5, h6, .h4, .h5, .h6 {
 
     .img-hero-midel {
         width: 470px !important;
+        max-width: 325px;
         height: 332px;
         margin: 10px;
         margin-left: auto;
@@ -232,8 +246,48 @@ h4, h5, h6, .h4, .h5, .h6 {
     }
 
 
-  }
+}
+
+@media only screen and (min-width: 650px) {
+    .img-clip-row {
+      margin-top: -154px;
+    }
+  
+    .img-clip-row:first-of-type {
+      margin-top: auto;
+    }
+  
+    .img-clip-wrap {
+      display: inline-block;
+    } 
+}
+
 /* hero image end*/
+
+/* booking */
+
+/* @media (min-width: 320px){
+    .container-xm, .container {
+        max-width: 300px;
+    }
+} */
+.booking-width{
+    width: 1000px !important;
+}
+@media only screen and  (max-width: 600px){
+
+    .booking-width{
+        width: 350px !important;
+    }
+    .col-1 {
+        flex: 0 0 auto;
+        width: 8.3333333333% !important;
+    }
+    .col-10 {
+        flex: 0 0 auto;
+        width: 83.3333333333% !important;
+    }
+}
 
 /*** Button Start ***/
 .btn.btn-primary {
