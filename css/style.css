@@ -184,7 +184,7 @@ h4, h5, h6, .h4, .h5, .h6 {
     height: 250px;
     background-color: transparent;
     position: relative;
-    /* transform: rotate(45deg); */
+    transform: rotate(45deg);
     margin-top: 70px ;
     margin-bottom: 70px ;
     border-radius: 15px;
