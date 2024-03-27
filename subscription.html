@@ -33,7 +33,10 @@
         <link href="css/subscription.css" rel="stylesheet" >
 
         <!-- {{-- text stylesheet --}} -->
-        <link href="css/text.css" rel="stylesheet" >
+        <link href="css/text.css" rel="stylesheet">
+
+        <!-- {{-- text stylesheet --}} -->
+        <link href="css/modal.css" rel="stylesheet">
 
 
     </head> 
@@ -70,7 +73,7 @@
 <!-- Hero Start -->
 <div class="container-fluid bg-light mt-0">
     <div class="container text-center animated bounceInDown">
-        <h1 class="display-1 mb-4">Subscription</h1>
+        <h1 class="display-1">Subscription</h1>
         <ol class="breadcrumb justify-content-center mb-0 animated bounceInDown">
             <li class="breadcrumb-item"><a href="index">Home</a></li>
             <li class="breadcrumb-item text-dark" aria-current="page">Subscription</li>
@@ -80,7 +83,7 @@
 <!-- Hero End -->
 
 <!-- Service Start -->
-<div class="container-fluid service py-6">
+<div class="container-fluid service">
     <div class="container">
         <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
             <h1 class="display-5 mb-5">We Have 3 Subscription systems</h1>
@@ -103,7 +106,7 @@
                                     <li class="pricing-feature">1GB of storage space</li>
                                     <li class="pricing-feature">Unlimited calls</li>
                                   </ul>
-                                  <button class="pricing-action">Subscribe</button>
+                                  <button onclick="showBasicModal()" class="pricing-action">Subscribe</button>
                                 </div>
                             </div>
                         </div>
@@ -127,7 +130,7 @@
                                   <li class="pricing-feature">1GB of storage space</li>
                                   <li class="pricing-feature">Unlimited calls</li>
                                 </ul>
-                                <button class="pricing-action">Subscribe</button>
+                                <button onclick="showStandardModal()" class="pricing-action">Subscribe</button>
                             </div>
                         </div>
 
@@ -151,7 +154,7 @@
                                     <li class="pricing-feature">Analytics integration</li>
                                     <li class="pricing-feature">Unlimited storage space</li>
                                 </ul>
-                                <button class="pricing-action">Subscribe</button>
+                                <button onclick="showPremiumModal()" class="pricing-action">Subscribe</button>
                             </div>
                             </div>
                         </div>
@@ -175,7 +178,7 @@
                                         <li class="pricing-feature">Analytics integration</li>
                                         <li class="pricing-feature">Unlimited storage space</li>
                                     </ul>
-                                    <button class="pricing-action">Subscribe</button>
+                                    <button onclick="showProModal()" class="pricing-action">Subscribe</button>
                                 </div>
                             </div>
                         </div>
@@ -186,6 +189,160 @@
     </div>
 </div>
 <!-- Service End -->
+
+<!-- modal start -->
+<div id="id01" class="modal">
+    <form class="modal-content animate" action="" method="post">
+        
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <!-- <img src="img/foody.png" alt="logo" class="avatar"> -->
+            <h1 class="display-5">Subscription Form</h1>
+            <h3 class="text-head">Selected Plan: Basic</h3>
+            <h3 class="pricing-title-modal">Plan Price: $90.9</h3>
+        </div>
+
+        <div class="container">
+            <div class="row g-4 form">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <input type="name" class="form-control border-primary p-2" placeholder="Your Name">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="email" class="form-control border-primary p-2" placeholder="Enter Your Email">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="mobile" class="form-control border-primary p-2" placeholder="Your Contact No">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="date" class="form-control border-primary p-2" placeholder="Select Date">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="file" class="form-control border-primary p-2" placeholder="Your Contact No.">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="note" class="form-control border-primary p-2" placeholder="note">
+                </div>
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary px-5 py-3 rounded-pill">Submit Now</button>
+                </div>
+            </div>
+        </div>
+    </form>   
+</div>
+<div id="id02" class="modal">
+    <form class="modal-content animate" action="" method="post">
+        
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <!-- <img src="img/foody.png" alt="logo" class="avatar"> -->
+            <h1 class="display-5">Subscription Form</h1>
+            <h3 class="text-head">Selected Plan: Standard</h3>
+            <h3 class="pricing-title-modal">Plan Price: $29.90</h3>
+        </div>
+
+        <div class="container">
+            <div class="row g-4 form">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <input type="name" class="form-control border-primary p-2" placeholder="Your Name">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="email" class="form-control border-primary p-2" placeholder="Enter Your Email">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="mobile" class="form-control border-primary p-2" placeholder="Your Contact No">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="date" class="form-control border-primary p-2" placeholder="Select Date">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="file" class="form-control border-primary p-2" placeholder="Your Contact No.">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="note" class="form-control border-primary p-2" placeholder="note">
+                </div>
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary px-5 py-3 rounded-pill">Submit Now</button>
+                </div>
+            </div>
+        </div>
+    </form>   
+</div>
+<div id="id03" class="modal">
+    <form class="modal-content animate" action="" method="post">
+        
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <!-- <img src="img/foody.png" alt="logo" class="avatar"> -->
+            <h1 class="display-5">Subscription Form</h1>
+            <h3 class="text-head">Selected Plan: Premium</h3>
+            <h3 class="pricing-title-modal">Plan Price: $59.90</h3>
+        </div>
+
+        <div class="container">
+            <div class="row g-4 form">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <input type="name" class="form-control border-primary p-2" placeholder="Your Name">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="email" class="form-control border-primary p-2" placeholder="Enter Your Email">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="mobile" class="form-control border-primary p-2" placeholder="Your Contact No">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="date" class="form-control border-primary p-2" placeholder="Select Date">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="file" class="form-control border-primary p-2" placeholder="Your Contact No.">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="note" class="form-control border-primary p-2" placeholder="note">
+                </div>
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary px-5 py-3 rounded-pill">Submit Now</button>
+                </div>
+            </div>
+        </div>
+    </form>   
+</div>
+<div id="id04" class="modal">
+    <form class="modal-content animate" action="" method="post">
+        
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('id04').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <!-- <img src="img/foody.png" alt="logo" class="avatar"> -->
+            <h1 class="display-5">Subscription Form</h1>
+            <h3 class="text-head">Selected Plan: Pro</h3>
+            <h3 class="pricing-title-modal">Plan Price: $70.55</h3>
+        </div>
+
+        <div class="container">
+            <div class="row g-4 form">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <input type="name" class="form-control border-primary p-2" placeholder="Your Name">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="email" class="form-control border-primary p-2" placeholder="Enter Your Email">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="mobile" class="form-control border-primary p-2" placeholder="Your Contact No">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="date" class="form-control border-primary p-2" placeholder="Select Date">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="file" class="form-control border-primary p-2" placeholder="Your Contact No.">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="note" class="form-control border-primary p-2" placeholder="note">
+                </div>
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary px-5 py-3 rounded-pill">Submit Now</button>
+                </div>
+            </div>
+        </div>
+    </form>   
+</div>
 
 <!-- Footer Start -->
 <div class="container-fluid footer py-6 my-6 mb-0 bg-white wow bounceInUp" data-wow-delay="0.1s">
@@ -268,6 +425,55 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js "></script>
+
+        <!-- modal -->
+        <script>
+            $(document).ready(function () {
+                console.log('Document ready function fired');
+        
+                var basicModal = document.getElementById('id01');
+                var standardModal = document.getElementById('id02');
+                var premiumModal = document.getElementById('id03');
+                var proModal = document.getElementById('id04');
+        
+                $(window).click(function (event) {
+                    if (event.target == basicModal) {
+                        basicModal.style.display = "none";
+                    }
+                    if (event.target == standardModal) {
+                        standardModal.style.display = "none";
+                    }
+                    if (event.target == premiumModal) {
+                        premiumModal.style.display = "none";
+                    }
+                    if (event.target == proModal) {
+                        proModal.style.display = "none";
+                    }
+                });
+            });
+        
+            // Define functions to show different subscription modals
+            function showBasicModal() {
+                var basicModal = document.getElementById('id01');
+                basicModal.style.display = "block";
+            }
+        
+            function showStandardModal() {
+                var standardModal = document.getElementById('id02');
+                standardModal.style.display = "block";
+            }
+        
+            function showPremiumModal() {
+                var premiumModal = document.getElementById('id03');
+                premiumModal.style.display = "block";
+            }
+        
+            function showProModal() {
+                var proModal = document.getElementById('id04');
+                proModal.style.display = "block";
+            }
+        </script>
+        
 </body>
 
 </html>
