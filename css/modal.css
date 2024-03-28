@@ -64,6 +64,10 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 10px;
   }
+  .modal-content-view{
+    width: 50%;
+    flex-direction: row;
+  }
 
   /* The Close Button (x) */
   .close {
@@ -131,5 +135,7 @@
         border: 1px solid #888;
         width: 90% !important; /* Could be more or less, depending on screen size */
       margin-top: 50px !important;
+      display: flex;
+      flex-direction: column;
       }
     }

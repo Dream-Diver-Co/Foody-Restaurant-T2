@@ -35,6 +35,13 @@
         <!-- {{-- text stylesheet --}} -->
         <link href="css/text.css" rel="stylesheet" >
 
+        <!-- {{-- text stylesheet --}} -->
+        <link href="css/modal.css" rel="stylesheet" >
+
+                <!-- {{-- text stylesheet --}} -->
+                <link href="css/detail.css" rel="stylesheet" >
+
+
         <style>
           body{
     background-color: #E3E7E8;
@@ -169,6 +176,27 @@ header .shopping span{
     margin: 0 10px;
 }
 
+.view{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+}
+
+  .card-wrapper-view{
+        /* height: 100vh; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .product-imgs-view{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .product-content-view{
+        padding-top: 0;
+    }
+
         </style>
 
     </head> 
@@ -268,15 +296,20 @@ header .shopping span{
                                         <div class="row">
                                             <div class=" col-md-6 col-sm-12 d-flex">
                                                 <h4 class="text-primary">$19</h4>
-                                            </div>
-                                            <div class=" col-md-6 col-sm-12 d-flex">
                                                 <i class="fas fa-star text-primary"></i>
                                                 <i class="fas fa-star text-primary"></i>
                                                 <i class="fas fa-star text-primary"></i>
                                                 <i class="fas fa-star text-primary"></i>
                                                 <i class="fas fa-star text-primary"></i>
                                             </div>
-                                            <button onclick="addToCard(${key})">Add To Card</button>`;
+                                            <div class=" col-md-6 col-sm-12 d-flex" style="text-align: right;">
+                                                <a href="detail1.html">
+                                                    <i class="fa-solid fa-eye" style="font-size: x-large; margin-left: 75px;"></i>
+                                                </a>
+                                            </div>
+                                                <a href="#" class="btn btn-primary rounded-pill">Add To Card
+                                                    <i class="fa-solid fa-cart-plus"></i>
+                                                </a>
                                         </div>
                                     </div>
                                 </div>
@@ -301,790 +334,7 @@ header .shopping span{
                                                 <i class="fas fa-star text-primary"></i>
                                                 <i class="fas fa-star text-primary"></i>
                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.5s">
-                            <div class="bg-white rounded menu-2">
-                                <div class="service-content d-flex align-items-center justify-content-center p-4">
-                                    <div class="service-content-icon text-center">
-                                        <img src="img/menu2-3.png" class="img-fluid rounded animated zoomIn" alt="">
-                                        <h4 class="mb-3">Chicken Galantine</h4>
-                                        <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
-                                                                                <div class="row">
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                                <h4 class="text-primary">$19</h4>
-                                            </div>
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                               
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.7s">
-                            <div class="bg-white rounded menu-2">
-                                <div class="service-content d-flex align-items-center justify-content-center p-4">
-                                    <div class="service-content-icon text-center">
-                                        <img src="img/menu2-4.png" class="img-fluid rounded animated zoomIn" alt="">
-                                        <h4 class="mb-3">Healthy Oatmeal</h4>
-                                        <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
-                                                                                <div class="row">
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                                <h4 class="text-primary">$19</h4>
-                                            </div>
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                               
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.1s">
-                            <div class="bg-white rounded menu-2">
-                                <div class="service-content d-flex align-items-center justify-content-center p-4">
-                                    <div class="service-content-icon text-center">
-                                        <img src="img/menu2-5.png" class="img-fluid rounded animated zoomIn" alt="">
-                                        <h4 class="mb-3">Barley Porridge</h4>
-                                        <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
-                                                                                <div class="row">
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                                <h4 class="text-primary">$19</h4>
-                                            </div>
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                               
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.3s">
-                            <div class="bg-white rounded menu-2">
-                                <div class="service-content d-flex align-items-center justify-content-center p-4">
-                                    <div class="service-content-icon text-center">
-                                        <img src="img/menu2-6.png" class="img-fluid rounded animated zoomIn" alt="">
-                                        <h4 class="mb-3">Sald Salmon</h4>
-                                        <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
-                                                                                <div class="row">
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                                <h4 class="text-primary">$19</h4>
-                                            </div>
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                               
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.5s">
-                            <div class="bg-white rounded menu-2">
-                                <div class="service-content d-flex align-items-center justify-content-center p-4">
-                                    <div class="service-content-icon text-center">
-                                        <img src="img/menu2-7.png" class="img-fluid rounded animated zoomIn" alt="">
-                                        <h4 class="mb-3">Avocado Tuna</h4>
-                                        <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
-                                                                                <div class="row">
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                                <h4 class="text-primary">$19</h4>
-                                            </div>
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                               
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.7s">
-                            <div class="bg-white rounded menu-2">
-                                <div class="service-content d-flex align-items-center justify-content-center p-4">
-                                    <div class="service-content-icon text-center">
-                                        <img src="img/menu2-8.png" class="img-fluid rounded animated zoomIn" alt="">
-                                        <h4 class="mb-3">Shrimps Tomato</h4>
-                                        <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
-                                                                                <div class="row">
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                                <h4 class="text-primary">$19</h4>
-                                            </div>
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                               
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="tab-7-menu" class="tab-pane fade show p-0">
-                    <div class="row g-4">
-                        <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.1s">
-                            <div class="bg-white rounded menu-2">
-                                <div class="service-content d-flex align-items-center justify-content-center p-4">
-                                    <div class="service-content-icon text-center">
-                                        <img src="img/menu2-1.png" class="img-fluid rounded animated zoomIn" alt="">
-                                        <h4 class="mb-3">Boiled Egg</h4>
-                                        <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
-                                        <div class="row">
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                                <h4 class="text-primary">$19</h4>
-                                            </div>
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                               
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.3s">
-                            <div class="bg-white rounded menu-2">
-                                <div class="service-content d-flex align-items-center justify-content-center p-4">
-                                    <div class="service-content-icon text-center">
-                                        <img src="img/menu2-2.png" class="img-fluid rounded animated zoomIn" alt="">
-                                        <h4 class="mb-3">Tomato Cucumber</h4>
-                                        <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
-                                        <div class="row">
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                                <h4 class="text-primary">$19</h4>
-                                            </div>
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                               
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.5s">
-                            <div class="bg-white rounded menu-2">
-                                <div class="service-content d-flex align-items-center justify-content-center p-4">
-                                    <div class="service-content-icon text-center">
-                                        <img src="img/menu2-3.png" class="img-fluid rounded animated zoomIn" alt="">
-                                        <h4 class="mb-3">Chicken Galantine</h4>
-                                        <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
-                                                                                <div class="row">
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                                <h4 class="text-primary">$19</h4>
-                                            </div>
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                               
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.7s">
-                            <div class="bg-white rounded menu-2">
-                                <div class="service-content d-flex align-items-center justify-content-center p-4">
-                                    <div class="service-content-icon text-center">
-                                        <img src="img/menu2-4.png" class="img-fluid rounded animated zoomIn" alt="">
-                                        <h4 class="mb-3">Healthy Oatmeal</h4>
-                                        <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
-                                                                                <div class="row">
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                                <h4 class="text-primary">$19</h4>
-                                            </div>
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                               
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.1s">
-                            <div class="bg-white rounded menu-2">
-                                <div class="service-content d-flex align-items-center justify-content-center p-4">
-                                    <div class="service-content-icon text-center">
-                                        <img src="img/menu2-5.png" class="img-fluid rounded animated zoomIn" alt="">
-                                        <h4 class="mb-3">Barley Porridge</h4>
-                                        <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
-                                                                                <div class="row">
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                                <h4 class="text-primary">$19</h4>
-                                            </div>
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                               
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.3s">
-                            <div class="bg-white rounded menu-2">
-                                <div class="service-content d-flex align-items-center justify-content-center p-4">
-                                    <div class="service-content-icon text-center">
-                                        <img src="img/menu2-6.png" class="img-fluid rounded animated zoomIn" alt="">
-                                        <h4 class="mb-3">Sald Salmon</h4>
-                                        <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
-                                                                                <div class="row">
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                                <h4 class="text-primary">$19</h4>
-                                            </div>
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                               
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.5s">
-                            <div class="bg-white rounded menu-2">
-                                <div class="service-content d-flex align-items-center justify-content-center p-4">
-                                    <div class="service-content-icon text-center">
-                                        <img src="img/menu2-7.png" class="img-fluid rounded animated zoomIn" alt="">
-                                        <h4 class="mb-3">Avocado Tuna</h4>
-                                        <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
-                                                                                <div class="row">
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                                <h4 class="text-primary">$19</h4>
-                                            </div>
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                               
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.7s">
-                            <div class="bg-white rounded menu-2">
-                                <div class="service-content d-flex align-items-center justify-content-center p-4">
-                                    <div class="service-content-icon text-center">
-                                        <img src="img/menu2-8.png" class="img-fluid rounded animated zoomIn" alt="">
-                                        <h4 class="mb-3">Shrimps Tomato</h4>
-                                        <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
-                                                                                <div class="row">
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                                <h4 class="text-primary">$19</h4>
-                                            </div>
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                               
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="tab-8-menu" class="tab-pane fade show p-0">
-                    <div class="row g-4">
-                        <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.1s">
-                            <div class="bg-white rounded menu-2">
-                                <div class="service-content d-flex align-items-center justify-content-center p-4">
-                                    <div class="service-content-icon text-center">
-                                        <img src="img/menu2-1.png" class="img-fluid rounded animated zoomIn" alt="">
-                                        <h4 class="mb-3">Boiled Egg</h4>
-                                        <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
-                                        <div class="row">
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                                <h4 class="text-primary">$19</h4>
-                                            </div>
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                               
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.3s">
-                            <div class="bg-white rounded menu-2">
-                                <div class="service-content d-flex align-items-center justify-content-center p-4">
-                                    <div class="service-content-icon text-center">
-                                        <img src="img/menu2-2.png" class="img-fluid rounded animated zoomIn" alt="">
-                                        <h4 class="mb-3">Tomato Cucumber</h4>
-                                        <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
-                                        <div class="row">
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                                <h4 class="text-primary">$19</h4>
-                                            </div>
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                               
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.5s">
-                            <div class="bg-white rounded menu-2">
-                                <div class="service-content d-flex align-items-center justify-content-center p-4">
-                                    <div class="service-content-icon text-center">
-                                        <img src="img/menu2-3.png" class="img-fluid rounded animated zoomIn" alt="">
-                                        <h4 class="mb-3">Chicken Galantine</h4>
-                                        <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
-                                                                                <div class="row">
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                                <h4 class="text-primary">$19</h4>
-                                            </div>
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                               
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.7s">
-                            <div class="bg-white rounded menu-2">
-                                <div class="service-content d-flex align-items-center justify-content-center p-4">
-                                    <div class="service-content-icon text-center">
-                                        <img src="img/menu2-4.png" class="img-fluid rounded animated zoomIn" alt="">
-                                        <h4 class="mb-3">Healthy Oatmeal</h4>
-                                        <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
-                                                                                <div class="row">
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                                <h4 class="text-primary">$19</h4>
-                                            </div>
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                               
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.1s">
-                            <div class="bg-white rounded menu-2">
-                                <div class="service-content d-flex align-items-center justify-content-center p-4">
-                                    <div class="service-content-icon text-center">
-                                        <img src="img/menu2-5.png" class="img-fluid rounded animated zoomIn" alt="">
-                                        <h4 class="mb-3">Barley Porridge</h4>
-                                        <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
-                                                                                <div class="row">
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                                <h4 class="text-primary">$19</h4>
-                                            </div>
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                               
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.3s">
-                            <div class="bg-white rounded menu-2">
-                                <div class="service-content d-flex align-items-center justify-content-center p-4">
-                                    <div class="service-content-icon text-center">
-                                        <img src="img/menu2-6.png" class="img-fluid rounded animated zoomIn" alt="">
-                                        <h4 class="mb-3">Sald Salmon</h4>
-                                        <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
-                                                                                <div class="row">
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                                <h4 class="text-primary">$19</h4>
-                                            </div>
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                               
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.5s">
-                            <div class="bg-white rounded menu-2">
-                                <div class="service-content d-flex align-items-center justify-content-center p-4">
-                                    <div class="service-content-icon text-center">
-                                        <img src="img/menu2-7.png" class="img-fluid rounded animated zoomIn" alt="">
-                                        <h4 class="mb-3">Avocado Tuna</h4>
-                                        <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
-                                                                                <div class="row">
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                                <h4 class="text-primary">$19</h4>
-                                            </div>
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                               
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.7s">
-                            <div class="bg-white rounded menu-2">
-                                <div class="service-content d-flex align-items-center justify-content-center p-4">
-                                    <div class="service-content-icon text-center">
-                                        <img src="img/menu2-8.png" class="img-fluid rounded animated zoomIn" alt="">
-                                        <h4 class="mb-3">Shrimps Tomato</h4>
-                                        <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
-                                                                                <div class="row">
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                                <h4 class="text-primary">$19</h4>
-                                            </div>
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                               
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="tab-9-menu" class="tab-pane fade show p-0">
-                    <div class="row g-4">
-                        <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.1s">
-                            <div class="bg-white rounded menu-2">
-                                <div class="service-content d-flex align-items-center justify-content-center p-4">
-                                    <div class="service-content-icon text-center">
-                                        <img src="img/menu2-1.png" class="img-fluid rounded animated zoomIn" alt="">
-                                        <h4 class="mb-3">Boiled Egg</h4>
-                                        <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
-                                        <div class="row">
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                                <h4 class="text-primary">$19</h4>
-                                            </div>
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                               
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.3s">
-                            <div class="bg-white rounded menu-2">
-                                <div class="service-content d-flex align-items-center justify-content-center p-4">
-                                    <div class="service-content-icon text-center">
-                                        <img src="img/menu2-2.png" class="img-fluid rounded animated zoomIn" alt="">
-                                        <h4 class="mb-3">Tomato Cucumber</h4>
-                                        <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
-                                        <div class="row">
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                                <h4 class="text-primary">$19</h4>
-                                            </div>
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                               
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.5s">
-                            <div class="bg-white rounded menu-2">
-                                <div class="service-content d-flex align-items-center justify-content-center p-4">
-                                    <div class="service-content-icon text-center">
-                                        <img src="img/menu2-3.png" class="img-fluid rounded animated zoomIn" alt="">
-                                        <h4 class="mb-3">Chicken Galantine</h4>
-                                        <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
-                                                                                <div class="row">
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                                <h4 class="text-primary">$19</h4>
-                                            </div>
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                               
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.7s">
-                            <div class="bg-white rounded menu-2">
-                                <div class="service-content d-flex align-items-center justify-content-center p-4">
-                                    <div class="service-content-icon text-center">
-                                        <img src="img/menu2-4.png" class="img-fluid rounded animated zoomIn" alt="">
-                                        <h4 class="mb-3">Healthy Oatmeal</h4>
-                                        <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
-                                                                                <div class="row">
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                                <h4 class="text-primary">$19</h4>
-                                            </div>
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                               
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.1s">
-                            <div class="bg-white rounded menu-2">
-                                <div class="service-content d-flex align-items-center justify-content-center p-4">
-                                    <div class="service-content-icon text-center">
-                                        <img src="img/menu2-5.png" class="img-fluid rounded animated zoomIn" alt="">
-                                        <h4 class="mb-3">Barley Porridge</h4>
-                                        <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
-                                                                                <div class="row">
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                                <h4 class="text-primary">$19</h4>
-                                            </div>
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                               
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.3s">
-                            <div class="bg-white rounded menu-2">
-                                <div class="service-content d-flex align-items-center justify-content-center p-4">
-                                    <div class="service-content-icon text-center">
-                                        <img src="img/menu2-6.png" class="img-fluid rounded animated zoomIn" alt="">
-                                        <h4 class="mb-3">Sald Salmon</h4>
-                                        <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
-                                                                                <div class="row">
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                                <h4 class="text-primary">$19</h4>
-                                            </div>
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                               
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.5s">
-                            <div class="bg-white rounded menu-2">
-                                <div class="service-content d-flex align-items-center justify-content-center p-4">
-                                    <div class="service-content-icon text-center">
-                                        <img src="img/menu2-7.png" class="img-fluid rounded animated zoomIn" alt="">
-                                        <h4 class="mb-3">Avocado Tuna</h4>
-                                        <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
-                                                                                <div class="row">
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                                <h4 class="text-primary">$19</h4>
-                                            </div>
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                               
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.7s">
-                            <div class="bg-white rounded menu-2">
-                                <div class="service-content d-flex align-items-center justify-content-center p-4">
-                                    <div class="service-content-icon text-center">
-                                        <img src="img/menu2-8.png" class="img-fluid rounded animated zoomIn" alt="">
-                                        <h4 class="mb-3">Shrimps Tomato</h4>
-                                        <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
-                                                                                <div class="row">
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                                <h4 class="text-primary">$19</h4>
-                                            </div>
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                               
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="tab-10-menu" class="tab-pane fade show p-0">
-                    <div class="row g-4">
-                        <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.1s">
-                            <div class="bg-white rounded menu-2">
-                                <div class="service-content d-flex align-items-center justify-content-center p-4">
-                                    <div class="service-content-icon text-center">
-                                        <img src="img/menu2-1.png" class="img-fluid rounded animated zoomIn" alt="">
-                                        <h4 class="mb-3">Boiled Egg</h4>
-                                        <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
-                                        <div class="row">
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                                <h4 class="text-primary">$19</h4>
-                                            </div>
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                               
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.3s">
-                            <div class="bg-white rounded menu-2">
-                                <div class="service-content d-flex align-items-center justify-content-center p-4">
-                                    <div class="service-content-icon text-center">
-                                        <img src="img/menu2-2.png" class="img-fluid rounded animated zoomIn" alt="">
-                                        <h4 class="mb-3">Tomato Cucumber</h4>
-                                        <p class="mb-4">Contrary to popular belief, ipsum is not simply random.</p>
-                                        <div class="row">
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                                <h4 class="text-primary">$19</h4>
-                                            </div>
-                                            <div class=" col-md-6 col-sm-12 d-flex">
-                                               
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                                <i class="fas fa-star text-primary"></i>
-                                            </div>
+                                            <button onclick="showBasicModal()"><i class="fa-solid fa-eye" style="font-size: x-large; margin-left: 75px;"></i></button>
                                         </div>
                                     </div>
                                 </div>
@@ -1839,6 +1089,328 @@ header .shopping span{
 
 <!--  End -->
 
+<div id="id01" class="modal">
+  
+        <div class="card-wrapper modal-content modal-content-view ">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <!-- card left -->
+            <div class="product-imgs">
+                <div class="img-display">
+                    <div class="img-showcase">
+                        <img src="img/menu2-7.png" alt="shoe image">
+                        <img src="img/menu2-7.png" alt="shoe image">
+                        <img src="img/menu2-7.png" alt="shoe image">
+                        <img src="img/menu2-7.png" alt="shoe image">
+                    </div>
+                </div>
+                <div class="img-select">
+                    <div class="img-item">
+                        <a href="#" data-id="1">
+                            <img src="img/menu2-7.png" alt="shoe image">
+                        </a>
+                    </div>
+                    <div class="img-item">
+                        <a href="#" data-id="2">
+                            <img src="img/menu2-7.png" alt="shoe image">
+                        </a>
+                    </div>
+                    <div class="img-item">
+                        <a href="#" data-id="3">
+                            <img src="img/menu2-7.png" alt="shoe image">
+                        </a>
+                    </div>
+                    <div class="img-item">
+                        <a href="#" data-id="4">
+                            <img src="img/menu2-7.png" alt="shoe image">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- card right -->
+            <div class="product-content product-content-view">
+                <h2 class="product-title">nike shoes</h2>
+                <a href="#" class="product-link">visit nike store</a>
+                <div class="product-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>4.7(21)</span>
+                </div>
+
+                <div class="product-price">
+                    <p class="last-price">Old Price: <span>$257.00</span></p>
+                    <p class="new-price">New Price: <span>$249.00 (5%)</span></p>
+                </div>
+
+                <div class="product-detail">
+                    <h2>about this item: </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eveniet veniam tempora fuga tenetur placeat sapiente architecto illum soluta consequuntur, aspernatur quidem at sequi ipsa!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, perferendis eius. Dignissimos, labore suscipit. Unde.</p>
+                    <ul>
+                        <li>Color: <span>Black</span></li>
+                        <li>Available: <span>in stock</span></li>
+                        <li>Category: <span>Shoes</span></li>
+                        <li>Shipping Area: <span>All over the world</span></li>
+                        <li>Shipping Fee: <span>Free</span></li>
+                    </ul>
+                </div>
+
+                <div class="purchase-info">
+                    <input type="number" min="0" value="1">
+                    <button type="button" class="btn">
+                        Add to Cart <i class="fas fa-shopping-cart"></i>
+                    </button>
+                    <button type="button" class="btn">Compare</button>
+                </div>
+
+                <div class="social-links">
+                    <p>Share At: </p>
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-pinterest"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+</div>
+
+
+
+<div id="" class="modal">
+
+    <form class="modal-content animate" action="" method="post">
+
+            <!-- Detail page -->
+            <div class = "card-wrapper">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <div class = "card">
+                <!-- card left -->
+                <div class = "product-imgs">
+                    <div class = "img-display">
+                    <div class = "img-showcase">
+                        <img src = "img/menu2-7.png" alt = "shoe image">
+                        <img src = "img/menu2-7.png" alt = "shoe image">
+                        <img src = "img/menu2-7.png" alt = "shoe image">
+                        <img src = "img/menu2-7.png" alt = "shoe image">
+                    </div>
+                    </div>
+                    <div class = "img-select">
+                    <div class = "img-item">
+                        <a href = "#" data-id = "1">
+                        <img src = "img/menu2-7.png" alt = "shoe image">
+                        </a>
+                    </div>
+                    <div class = "img-item">
+                        <a href = "#" data-id = "2">
+                        <img src = "img/menu2-7.png" alt = "shoe image">
+                        </a>
+                    </div>
+                    <div class = "img-item">
+                        <a href = "#" data-id = "3">
+                        <img src = "img/menu2-7.png" alt = "shoe image">
+                        </a>
+                    </div>
+                    <div class = "img-item">
+                        <a href = "#" data-id = "4">
+                        <img src = "img/menu2-7.png" alt = "shoe image">
+                        </a>
+                    </div>
+                    </div>
+                </div>
+                <!-- card right -->
+                <div class = "product-content">
+                    <h2 class = "product-title">nike shoes</h2>
+                    <a href = "#" class = "product-link">visit nike store</a>
+                    <div class = "product-rating">
+                    <i class = "fas fa-star"></i>
+                    <i class = "fas fa-star"></i>
+                    <i class = "fas fa-star"></i>
+                    <i class = "fas fa-star"></i>
+                    <i class = "fas fa-star-half-alt"></i>
+                    <span>4.7(21)</span>
+                    </div>
+            
+                    <div class = "product-price">
+                    <p class = "last-price">Old Price: <span>$257.00</span></p>
+                    <p class = "new-price">New Price: <span>$249.00 (5%)</span></p>
+                    </div>
+            
+                    <div class = "product-detail">
+                    <h2>about this item: </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo eveniet veniam tempora fuga tenetur placeat sapiente architecto illum soluta consequuntur, aspernatur quidem at sequi ipsa!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, perferendis eius. Dignissimos, labore suscipit. Unde.</p>
+                    <ul>
+                        <li>Color: <span>Black</span></li>
+                        <li>Available: <span>in stock</span></li>
+                        <li>Category: <span>Shoes</span></li>
+                        <li>Shipping Area: <span>All over the world</span></li>
+                        <li>Shipping Fee: <span>Free</span></li>
+                    </ul>
+                    </div>
+            
+                    <div class = "purchase-info">
+                    <input type = "number" min = "0" value = "1">
+                    <button type = "button" class = "btn">
+                        Add to Cart <i class = "fas fa-shopping-cart"></i>
+                    </button>
+                    <button type = "button" class = "btn">Compare</button>
+                    </div>
+            
+                    <div class = "social-links">
+                    <p>Share At: </p>
+                    <a href = "#">
+                        <i class = "fab fa-facebook-f"></i>
+                    </a>
+                    <a href = "#">
+                        <i class = "fab fa-twitter"></i>
+                    </a>
+                    <a href = "#">
+                        <i class = "fab fa-instagram"></i>
+                    </a>
+                    <a href = "#">
+                        <i class = "fab fa-whatsapp"></i>
+                    </a>
+                    <a href = "#">
+                        <i class = "fab fa-pinterest"></i>
+                    </a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+
+
+    </form>   
+
+</div>
+<div id="id02" class="modal">
+    <form class="modal-content animate" action="" method="post">
+        
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <!-- <img src="img/foody.png" alt="logo" class="avatar"> -->
+            <h1 class="display-5">Subscription Form</h1>
+            <h3 class="text-head">Selected Plan: Standard</h3>
+            <h3 class="pricing-title-modal">Plan Price: $29.90</h3>
+        </div>
+
+        <div class="container">
+            <div class="row g-4 form">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <input type="name" class="form-control border-primary p-2" placeholder="Your Name">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="email" class="form-control border-primary p-2" placeholder="Enter Your Email">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="mobile" class="form-control border-primary p-2" placeholder="Your Contact No">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="date" class="form-control border-primary p-2" placeholder="Select Date">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="file" class="form-control border-primary p-2" placeholder="Your Contact No.">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="note" class="form-control border-primary p-2" placeholder="note">
+                </div>
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary px-5 py-3 rounded-pill">Submit Now</button>
+                </div>
+            </div>
+        </div>
+    </form>   
+</div>
+<div id="id03" class="modal">
+    <form class="modal-content animate" action="" method="post">
+        
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <!-- <img src="img/foody.png" alt="logo" class="avatar"> -->
+            <h1 class="display-5">Subscription Form</h1>
+            <h3 class="text-head">Selected Plan: Premium</h3>
+            <h3 class="pricing-title-modal">Plan Price: $59.90</h3>
+        </div>
+
+        <div class="container">
+            <div class="row g-4 form">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <input type="name" class="form-control border-primary p-2" placeholder="Your Name">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="email" class="form-control border-primary p-2" placeholder="Enter Your Email">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="mobile" class="form-control border-primary p-2" placeholder="Your Contact No">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="date" class="form-control border-primary p-2" placeholder="Select Date">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="file" class="form-control border-primary p-2" placeholder="Your Contact No.">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="note" class="form-control border-primary p-2" placeholder="note">
+                </div>
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary px-5 py-3 rounded-pill">Submit Now</button>
+                </div>
+            </div>
+        </div>
+    </form>   
+</div>
+<div id="id04" class="modal">
+    <form class="modal-content animate" action="" method="post">
+        
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('id04').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <!-- <img src="img/foody.png" alt="logo" class="avatar"> -->
+            <h1 class="display-5">Subscription Form</h1>
+            <h3 class="text-head">Selected Plan: Pro</h3>
+            <h3 class="pricing-title-modal">Plan Price: $70.55</h3>
+        </div>
+
+        <div class="container">
+            <div class="row g-4 form">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <input type="name" class="form-control border-primary p-2" placeholder="Your Name">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="email" class="form-control border-primary p-2" placeholder="Enter Your Email">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="mobile" class="form-control border-primary p-2" placeholder="Your Contact No">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="date" class="form-control border-primary p-2" placeholder="Select Date">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="file" class="form-control border-primary p-2" placeholder="Your Contact No.">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <input type="note" class="form-control border-primary p-2" placeholder="note">
+                </div>
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary px-5 py-3 rounded-pill">Submit Now</button>
+                </div>
+            </div>
+        </div>
+    </form>   
+</div>
 
 <!-- Footer Start -->
 <div class="container-fluid footer py-6 my-6 mb-0 bg-white wow bounceInUp" data-wow-delay="0.1s">
@@ -2032,6 +1604,80 @@ function changeQuantity(key, quantity){
     }
     reloadCard();
 }
+    </script>
+
+
+
+        <!-- modal -->
+        <script>
+            $(document).ready(function () {
+                console.log('Document ready function fired');
+        
+                var basicModal = document.getElementById('id01');
+                var standardModal = document.getElementById('id02');
+                var premiumModal = document.getElementById('id03');
+                var proModal = document.getElementById('id04');
+        
+                $(window).click(function (event) {
+                    if (event.target == basicModal) {
+                        basicModal.style.display = "none";
+                    }
+                    if (event.target == standardModal) {
+                        standardModal.style.display = "none";
+                    }
+                    if (event.target == premiumModal) {
+                        premiumModal.style.display = "none";
+                    }
+                    if (event.target == proModal) {
+                        proModal.style.display = "none";
+                    }
+                });
+            });
+        
+            // Define functions to show different subscription modals
+            function showBasicModal() {
+                var basicModal = document.getElementById('id01');
+                basicModal.style.display = "block";
+            }
+        
+            function showStandardModal() {
+                var standardModal = document.getElementById('id02');
+                standardModal.style.display = "block";
+            }
+        
+            function showPremiumModal() {
+                var premiumModal = document.getElementById('id03');
+                premiumModal.style.display = "block";
+            }
+        
+            function showProModal() {
+                var proModal = document.getElementById('id04');
+                proModal.style.display = "block";
+            }
+        </script>
+
+
+    <!-- details page -->
+    <script>
+        const imgs = document.querySelectorAll('.img-select a');
+        const imgBtns = [...imgs];
+        let imgId = 1;
+
+        imgBtns.forEach((imgItem) => {
+            imgItem.addEventListener('click', (event) => {
+                event.preventDefault();
+                imgId = imgItem.dataset.id;
+                slideImage();
+            });
+        });
+
+        function slideImage(){
+            const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
+
+            document.querySelector('.img-showcase').style.transform = `translateX(${- (imgId - 1) * displayWidth}px)`;
+        }
+
+        window.addEventListener('resize', slideImage);
     </script>
 </body>
 
